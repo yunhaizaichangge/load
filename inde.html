@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .loginbox{
+            width: 100vw;
+            
+            text-align: center;
+        }
+        .bodybox1{
+            float: left;
+            width: 100vw;
+            height: 100vh;
+            background:aqua;
+            background:url("image/荧.png");
+            background-repeat: no-repeat;
+        }
+        .bodybox2{
+            float: left;
+            width: 23vw;
+            height: 45vh;
+            background:rgb(225, 213, 213);
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 60vw;
+            box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+            border-radius: 10px;
+            opacity: 0.8;
+            
+        }
+        .loginipt{
+            border-radius: 5px;
+            border-style: none;
+            width: 15vw;
+            height: 5vh;
+            padding-left: 1vw;
+            caret-color: rgb(245, 161, 161);
+        }
+        .loginipt:focus{
+            outline: 1px solid rgb(8, 113, 170);
+        }
+        .loadbtn{
+            border-width: 0px;
+            border-radius: 5px;
+            outline: none;
+            width: 15vw;
+            height: 50px;
+            background: rgb(73, 165, 240);
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            letter-spacing:30px;
+            padding-left: 30px;
+            transform: scale(1.00);
+            transition: 0.2s;
+        }
+        .loadbtn:hover{
+            transform: scale(1.05);
+            transition: 0.2s;
+            background: rgb(89, 180, 255);
+        }
+        .head-p{
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: 黑体;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(10, 115, 200);
+            font-family: 黑体;
+            font-size: 20px;
+        }
+        .account{
+            margin-top: 25px;
+            margin-left: 4vw;
+            position:absolute;
+        }
+        .a_span{
+            margin-left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        <div class="bodybox1">
+            <div class="bodybox2">
+                <form action="check.php" method="post">
+                    <p class="head-p"><b>用户登陆</b></p> 
+                    <br>
+                    <input type="text" name="user" class="loginipt" placeholder="请输入用户名" required="required">
+                    <br>
+                    <br>
+                    <input type="password" name="password" class="loginipt" placeholder="请输入密码" required="required">
+                    <br>
+                    <input type="submit" value="登录" class="loadbtn">
+                </form>
+                <div class="account">
+                    <a href="Sign.html"><b>注册账号</b></a> <span class="a_span"><a href="#"><b>联系我们</b></a></span>
+                </div>
+            </div>
+        </div>
+        <div class="downbox"></div>
+    </div>
+</body>
+</html>

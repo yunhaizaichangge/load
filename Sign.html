@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .loginbox{
+            width: 100vw;
+            height: 90vh;
+        }
+  
+        
+        .bodybox1{
+            float: left;
+            width: 100vw;
+            height: 100vh;
+            background:aqua;
+            background:url("image/芭芭拉.png");
+            background-repeat: no-repeat;
+            
+        }
+        .bodybox2{
+            
+            float: left;
+            width: 800px;
+            height: 500px;
+            background:rgb(225, 213, 213);
+            margin-top: 100px;
+            margin-left: 25%;
+            box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+            border-radius: 10px;
+            opacity: 0.8;
+            
+        }
+        .loginipt{
+            border-radius: 5px;
+            border-style: none;
+            width: 300px;
+            height: 50px;
+            padding-left: 10px;
+            margin-top: 15px;
+            margin-left: 40px;
+
+        }
+        .loginipt_1{
+            border-radius: 5px;
+            border-style: none;
+            width: 655px;
+            height: 50px;
+            padding-left: 10px;
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+        .loginipt:focus{
+            outline: 1px solid rgb(8, 113, 170);
+        }
+        .loginipt_1:focus{
+            outline: 1px solid rgb(8, 113, 170);
+        }
+        .loadbtn{
+            border-width: 0px;
+            border-radius: 5px;
+            outline: none;
+            width: 200px;
+            height: 50px;
+            background: rgb(73, 165, 240);
+            margin-top: 20px;
+            margin-left: 120px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            letter-spacing:50px;
+            padding-left: 60px;
+            transform: scale(1.00);
+            transition: 0.2s;
+        }
+        .loadbtn:hover{
+            transform: scale(1.05);
+            transition: 0.2s;
+            background: rgb(89, 180, 255);
+        }
+        .head-p{
+            margin-top: 20px;
+            font-size: 30px;
+            font-family: 黑体;
+            margin-left: 350px;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(10, 115, 200);
+            font-family: 黑体;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        .account{
+            margin-top: 30px;
+            margin-left: 600px;
+            position:absolute;
+        }
+        .sexspan{
+            font-size: 20px;
+            font-family: 黑体;
+            border-radius: 5px;
+            border-style: none;
+            width: 300px;
+            height: 50px;
+            padding-left: 10px;
+            margin-top: 15px;
+            margin-left: 40px;
+        }
+        .radio_type{
+            
+            border: 10px;
+        }
+        form{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginbox">
+        
+        <div class="bodybox1">
+            <div class="bodybox2">
+                <form action="signcheck.php" method="post" >
+                    <p class="head-p"><b>欢迎注册</b></p>
+                 
+                    <br>
+                    <input type="text" name="user" class="loginipt" placeholder="请输入用户名">
+                    
+                    <input type="text" name="qq" class="loginipt" placeholder="请输入QQ">
+                    <br>
+                    <input type="password" name="password" class="loginipt" placeholder="请输入密码">
+                    <span class="sexspan">
+                        请选择性别:&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" id="" class="radio_type" checked value="1">男&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="sex" class="radio_type" value="0">女
+                    </span>
+                    <br>
+                    <input type="text" name="email" class="loginipt" placeholder="请输入电子邮箱">
+                    
+                    <input type="text" name="phone" class="loginipt" placeholder="请输入电话">
+                    <br>
+                    <input type="text" name="address" class="loginipt_1" placeholder="请输入地址">
+                    <br>
+                    <input type="submit" value="提交" class="loadbtn">
+                    <input type="reset" value="重置" class="loadbtn">
+                    <div class="account">
+                        <a href="login.html"><b>立即登录</b></a>
+                    </div>  
+                </form>
+                
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
